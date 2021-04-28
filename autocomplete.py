@@ -25,6 +25,7 @@ def parse_file(filename, result):
     else:
         return
 
+    result.append(filename)
     with open(filename) as f:
         current_cls = None
         for line in f.readlines():
