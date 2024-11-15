@@ -10,9 +10,9 @@ import re
 import os
 
 
-class_pat = re.compile('^\s*class\s+(Test\w+).*')
-fn_pat = re.compile('^\s*def\s+(test_\w+).*')
-file_pat = re.compile('^.*?/?test_\w+\.py$')
+class_pat = re.compile(r'^\s*class\s+(Test\w+).*')
+fn_pat = re.compile(r'^\s*def\s+(test_\w+).*')
+file_pat = re.compile(r'^.*?/?test_\w+\.py$')
 
 
 def parse_file(filename, result):
